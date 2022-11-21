@@ -24,7 +24,7 @@ from shutil import rmtree
 from copy import deepcopy
 
 # matlibplot imports
-from scipy.misc import imsave
+# from scipy.misc import imsave
 
 # my imports
 from MyImage_class import MyImage, Mask
@@ -132,7 +132,7 @@ class ImageManager:
         im = imft.resize_image(size[0], size[1])
         
         # save resized image
-        imsave(imagepath.gifname, im.data, format = "gif")
+        # imsave(imagepath.gifname, im.data, format = "gif")
         
     def rm(self):
         ''' cleans up the buffer folder containing the gifs files'''
